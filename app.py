@@ -1,6 +1,9 @@
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+
+st.header("Anuncios de Vehiculos")
+st.write("Selecciona el gráfico deseado")
         
 car_data = pd.read_csv('https://practicum-content.s3.us-west-1.amazonaws.com/new-markets/Data_sprint_4_Refactored/vehicles_us.csv') # leer los datos
 hist_button = st.button('Construir histograma') # crear un botón
